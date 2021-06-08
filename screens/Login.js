@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
   StyleSheet,
   ImageBackground,
@@ -8,7 +8,6 @@ import {
   Keyboard
 } from 'react-native';
 import { Block, Checkbox, Text, Button as GaButton, theme } from 'galio-framework';
-
 import { Button, Icon, Input } from '../components';
 import { Images, nowTheme } from '../constants';
 import { Entypo } from '@expo/vector-icons';
@@ -19,9 +18,29 @@ const DismissKeyboard = ({ children }) => (
 );
 
 class Login extends React.Component {
+  
   render() {
-    const { navigation } = this.props;
+    
 
+    const submitData=()=>{
+      fetch("10.0.2.2:3000/stdlogin",{
+        method:"post",
+        headers:{
+          'content-Type':'application/json'
+        },
+        body:JSON.stringify({
+          email,
+          password
+        })
+      })
+      .then(res=>res.json())
+      .then(data=>{
+        console.log(data)
+      })
+    }
+
+
+    const { navigation } = this.props;
     return (
       <DismissKeyboard>
         <Block flex middle>
@@ -63,6 +82,8 @@ class Login extends React.Component {
                               required
                               email
                               style={styles.inputs}
+                              onChangeText={text=>setemail(text)}
+                              value={email}
                               iconContent={
                                 <Icon
                                   size={16}
@@ -80,6 +101,8 @@ class Login extends React.Component {
                               secureTextEntry
                               minLength={8}
                               style={styles.inputs}
+                              onChangeText={text=>setpassword(text)}
+                              value={password}
                               iconContent={
                                 <Entypo
                                   size={16}
@@ -116,7 +139,8 @@ class Login extends React.Component {
                           <Button 
                           color="primary" 
                           round style={styles.createButton}
-                          onPress={() => navigation.navigate('App')}
+                          onPress={() => submitData()}
+                          // onPress={() => navigation.navigate('App')}
                           >
                             <Text
                               style={{ fontFamily: 'montserrat-bold' }}

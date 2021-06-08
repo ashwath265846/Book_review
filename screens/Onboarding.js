@@ -9,19 +9,18 @@ import { HeaderHeight } from '../constants/utils';
 export default class Onboarding extends React.Component {
   render() {
     const { navigation } = this.props;
-
     return (
       <Block flex style={styles.container}>
         <StatusBar barStyle="light-content" />
-        <Block flex>
-          <ImageBackground
+        <Block flex backgroundColor="white">
+          {/* <ImageBackground
             source={Images.Onboarding}
             style={{ flex: 1, height: height, width, zIndex: 1 }}
-          />
+          /> */}
           <Block space="between" style={styles.padded}>
             <Block>
               <Block middle>
-                <Image source={Images.NowLogo} style={{ width: 300, height: 150, bottom: 160, position: 'absolute' }} />
+                <Image source={Images.NowLogo} style={{ width: 350, height: 150, bottom: 160, position: 'absolute' }} />
               </Block>
               
               <Block>

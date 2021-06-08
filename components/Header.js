@@ -10,7 +10,7 @@ import nowTheme from '../constants/Theme';
 
 const { height, width } = Dimensions.get('window');
 const iPhoneX = () =>
-  Platform.OS === 'ios' && (height === 812 || width === 812 || height === 896 || width === 896);
+  Platform.OS === 'android' && (height === 812 || width === 812 || height === 896 || width === 896);
 
 const BellButton = ({ isWhite, style, navigation }) => (
   <TouchableOpacity
@@ -259,7 +259,7 @@ const styles = StyleSheet.create({
     paddingVertical: 0,
     paddingBottom: theme.SIZES.BASE * 1.3,
     paddingTop: 20,
-    backgroundColor:'#FF7F50',
+    backgroundColor:'#ff6347',
     // paddingTop: iPhoneX ? theme.SIZES.BASE * 4 : theme.SIZES.BASE,
     zIndex: 5
   },
