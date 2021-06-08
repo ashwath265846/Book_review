@@ -69,7 +69,7 @@ function AccountStack(props) {
     </Stack.Navigator>
   );
 }
-
+///bqwidhiudqiudiuqdhiucfuqc
 function LoginStack(props) {
   return (
     <Stack.Navigator mode="card" headerMode="none">
