@@ -96,3 +96,32 @@ export default class App extends React.Component {
     }
   };
 }
+<<<<<<< HEAD
+=======
+
+
+// import { StatusBar } from 'expo-status-bar';
+// import React from 'react';
+// import { StyleSheet, Text, View, StatusBar } from 'react-native';
+// import Splash from './screens/Splash';
+// import LottieView from 'lottie-react-native';
+// import { Block, Button } from 'galio-framework';
+// export default function App() {
+//   return (
+//     <View style={styles.container}>
+//       <Text></Text>
+//       <StatusBar style="auto" />
+//        <Splash />
+//     </View>
+//   );
+// }
+
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: '#fff',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   },
+// });
+>>>>>>> 1f99f5c36bf5af5d4c9f719ba6cc0b52f2e80b1e

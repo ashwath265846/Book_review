@@ -11,7 +11,11 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
+<<<<<<< HEAD
       "image": "./assets/splash.png",
+=======
+      "image": "./assets/Splash4.jpg",
+>>>>>>> 1f99f5c36bf5af5d4c9f719ba6cc0b52f2e80b1e
       "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
@@ -24,7 +28,11 @@
     "ios": {
       "supportsTablet": true
     },
+<<<<<<< HEAD
     
     "description": "Now UI React Native, based on Now UI Design System. Coded by Creative Tim"
+=======
+    "description": "We are the student of BMSCE developed this app."
+>>>>>>> 1f99f5c36bf5af5d4c9f719ba6cc0b52f2e80b1e
   }
 }

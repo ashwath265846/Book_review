@@ -5,10 +5,19 @@ import { Block, Button, Text, theme } from 'galio-framework';
 const { height, width } = Dimensions.get('screen');
 import { Images, nowTheme } from '../constants/';
 import { HeaderHeight } from '../constants/utils';
+<<<<<<< HEAD
+=======
+import LottieView from 'lottie-react-native';
+import Splash from '../screens/Splash';
+>>>>>>> 1f99f5c36bf5af5d4c9f719ba6cc0b52f2e80b1e
 
 export default class Onboarding extends React.Component {
   render() {
     const { navigation } = this.props;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1f99f5c36bf5af5d4c9f719ba6cc0b52f2e80b1e
     return (
       <Block flex style={styles.container}>
         <StatusBar barStyle="light-content" />
@@ -20,19 +29,40 @@ export default class Onboarding extends React.Component {
           <Block space="between" style={styles.padded}>
             <Block>
               <Block middle>
+<<<<<<< HEAD
                 <Image source={Images.NowLogo} style={{ width: 350, height: 150, bottom: 160, position: 'absolute' }} />
               </Block>
               
+=======
+                {/* <Image source={Images.NowLogo} style={{ width: 350, height: 150, bottom: 160, position: 'absolute' }} /> */}
+                <Splash />
+              </Block>
+
+>>>>>>> 1f99f5c36bf5af5d4c9f719ba6cc0b52f2e80b1e
               <Block>
                 <Block middle>
                   <Text
                     style={{
+<<<<<<< HEAD
                       fontFamily: 'montserrat-regular', bottom: 50, position: 'absolute', letterSpacing: 2, paddingHorizontal: 10, textAlign: 'center'
                     }}
                     color="white"
                     size={38}
                   >
                    Library Book Review 
+=======
+                      fontFamily: 'montserrat-regular',
+                      bottom: 50,
+                      position: 'absolute',
+                      letterSpacing: 2,
+                      paddingHorizontal: 10,
+                      textAlign: 'center',
+                    }}
+                    color="black"
+                    size={38}
+                  >
+                    {/* Library Book Review */}
+>>>>>>> 1f99f5c36bf5af5d4c9f719ba6cc0b52f2e80b1e
                   </Text>
                 </Block>
               </Block>
@@ -75,7 +105,11 @@ export default class Onboarding extends React.Component {
                 row
                 style={{
                   marginTop: theme.SIZES.BASE * 2.5,
+<<<<<<< HEAD
                   marginBottom: theme.SIZES.BASE * 2
+=======
+                  marginBottom: theme.SIZES.BASE * 2,
+>>>>>>> 1f99f5c36bf5af5d4c9f719ba6cc0b52f2e80b1e
                 }}
               >
                 <Button
@@ -103,6 +137,7 @@ export default class Onboarding extends React.Component {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: theme.COLORS.BLACK,
+<<<<<<< HEAD
     marginTop: Platform.OS === 'android' ? -HeaderHeight : 0
   },
   padded: {
@@ -110,12 +145,25 @@ const styles = StyleSheet.create({
     zIndex: 3,
     position: 'absolute',
     bottom: Platform.OS === 'android' ? theme.SIZES.BASE * 2 : theme.SIZES.BASE * 3
+=======
+    marginTop: Platform.OS === 'android' ? -HeaderHeight : 0,
+  },
+  padded: {
+    paddingHorizontal: theme.SIZES.BASE * 1.5,
+    zIndex: 3,
+    position: 'absolute',
+    bottom: Platform.OS === 'android' ? theme.SIZES.BASE * 2 : theme.SIZES.BASE * 3,
+>>>>>>> 1f99f5c36bf5af5d4c9f719ba6cc0b52f2e80b1e
   },
   button: {
     width: width - theme.SIZES.BASE * 4,
     height: theme.SIZES.BASE * 3,
     shadowRadius: 0,
+<<<<<<< HEAD
     shadowOpacity: 0
+=======
+    shadowOpacity: 0,
+>>>>>>> 1f99f5c36bf5af5d4c9f719ba6cc0b52f2e80b1e
   },
 
   gradient: {
@@ -124,6 +172,11 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     right: 0,
+<<<<<<< HEAD
     height: 66
   }
+=======
+    height: 66,
+  },
+>>>>>>> 1f99f5c36bf5af5d4c9f719ba6cc0b52f2e80b1e
 });

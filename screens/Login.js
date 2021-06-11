@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, {useState} from 'react';
+=======
+import React from 'react';
+>>>>>>> 1f99f5c36bf5af5d4c9f719ba6cc0b52f2e80b1e
 import {
   StyleSheet,
   ImageBackground,
@@ -8,6 +12,10 @@ import {
   Keyboard
 } from 'react-native';
 import { Block, Checkbox, Text, Button as GaButton, theme } from 'galio-framework';
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1f99f5c36bf5af5d4c9f719ba6cc0b52f2e80b1e
 import { Button, Icon, Input } from '../components';
 import { Images, nowTheme } from '../constants';
 import { Entypo } from '@expo/vector-icons';
@@ -18,6 +26,7 @@ const DismissKeyboard = ({ children }) => (
 );
 
 class Login extends React.Component {
+<<<<<<< HEAD
   
   render() {
     
@@ -41,6 +50,11 @@ class Login extends React.Component {
 
 
     const { navigation } = this.props;
+=======
+  render() {
+    const { navigation } = this.props;
+
+>>>>>>> 1f99f5c36bf5af5d4c9f719ba6cc0b52f2e80b1e
     return (
       <DismissKeyboard>
         <Block flex middle>
@@ -82,8 +96,11 @@ class Login extends React.Component {
                               required
                               email
                               style={styles.inputs}
+<<<<<<< HEAD
                               onChangeText={text=>setemail(text)}
                               value={email}
+=======
+>>>>>>> 1f99f5c36bf5af5d4c9f719ba6cc0b52f2e80b1e
                               iconContent={
                                 <Icon
                                   size={16}
@@ -101,8 +118,11 @@ class Login extends React.Component {
                               secureTextEntry
                               minLength={8}
                               style={styles.inputs}
+<<<<<<< HEAD
                               onChangeText={text=>setpassword(text)}
                               value={password}
+=======
+>>>>>>> 1f99f5c36bf5af5d4c9f719ba6cc0b52f2e80b1e
                               iconContent={
                                 <Entypo
                                   size={16}
@@ -139,15 +159,23 @@ class Login extends React.Component {
                           <Button 
                           color="primary" 
                           round style={styles.createButton}
+<<<<<<< HEAD
                           onPress={() => submitData()}
                           // onPress={() => navigation.navigate('App')}
+=======
+                          onPress={() => navigation.navigate('App')}
+>>>>>>> 1f99f5c36bf5af5d4c9f719ba6cc0b52f2e80b1e
                           >
                             <Text
                               style={{ fontFamily: 'montserrat-bold' }}
                               size={14}
                               color={nowTheme.COLORS.WHITE}
                             >
+<<<<<<< HEAD
                               Login
+=======
+                              Log
+>>>>>>> 1f99f5c36bf5af5d4c9f719ba6cc0b52f2e80b1e
                             </Text>
                           </Button>
                         </Block>

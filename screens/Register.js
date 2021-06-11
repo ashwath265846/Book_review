@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React from 'react';
+=======
+import React  from 'react';
+>>>>>>> 1f99f5c36bf5af5d4c9f719ba6cc0b52f2e80b1e
 import {
   StyleSheet,
   ImageBackground,
@@ -17,19 +21,40 @@ const { width, height } = Dimensions.get('screen');
 const DismissKeyboard = ({ children }) => (
   <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>{children}</TouchableWithoutFeedback>
 );
+<<<<<<< HEAD
 
 class Register extends React.Component {
+=======
+class Register extends React.Component {
+
+  constructor(props){
+    super(props)
+    this.state={
+      email: "", 
+      password: ""
+    }
+  }
+>>>>>>> 1f99f5c36bf5af5d4c9f719ba6cc0b52f2e80b1e
   render() {
     const { navigation } = this.props;
 
     return (
       <DismissKeyboard>
+<<<<<<< HEAD
         <Block flex middle backgroundColor="#ff6347">
           {/* <ImageBackground
             source={Images.RegisterBackground}
             style={styles.imageBackgroundContainer}
             imageStyle={styles.imageBackground}
           > */}
+=======
+        <Block flex middle>
+         <ImageBackground
+            source={Images.RegisterBackground}
+            style={styles.imageBackgroundContainer}
+            imageStyle={styles.imageBackground}
+         >
+>>>>>>> 1f99f5c36bf5af5d4c9f719ba6cc0b52f2e80b1e
             <Block flex middle>
               <Block style={styles.registerContainer}>
                 <Block flex space="evenly">
@@ -106,6 +131,10 @@ class Register extends React.Component {
                               keyboardType="email-address"
                               required
                               email
+<<<<<<< HEAD
+=======
+                              onChangeText={(value) => this.setState({email: value})}
+>>>>>>> 1f99f5c36bf5af5d4c9f719ba6cc0b52f2e80b1e
                               style={styles.inputs}
                               iconContent={
                                 <Icon
@@ -123,6 +152,10 @@ class Register extends React.Component {
                               placeholder="Password"
                               secureTextEntry
                               minLength={8}
+<<<<<<< HEAD
+=======
+                              onChangeText={(value)=> this.setState({password: value})}
+>>>>>>> 1f99f5c36bf5af5d4c9f719ba6cc0b52f2e80b1e
                               style={styles.inputs}
                               iconContent={
                                 <Entypo
@@ -186,13 +219,22 @@ class Register extends React.Component {
                             </Text>
                           </Button>
                         </Block>
+<<<<<<< HEAD
+=======
+                        {/* <Text>{"email=="+this.state.email}</Text> */}
+                        <Text>{"email=="+this.state.email+ " password==="+this.state.password}</Text>
+>>>>>>> 1f99f5c36bf5af5d4c9f719ba6cc0b52f2e80b1e
                       </Block>
                     </Block>
                   </Block>
                 </Block>
               </Block>
             </Block>
+<<<<<<< HEAD
           {/* </ImageBackground> */}
+=======
+          </ImageBackground>
+>>>>>>> 1f99f5c36bf5af5d4c9f719ba6cc0b52f2e80b1e
         </Block>
       </DismissKeyboard>
     );

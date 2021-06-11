@@ -2,7 +2,11 @@
 const Onboarding = require('../assets/imgs/skyblue.png');
 const Logo = require('../assets/imgs/now-logo.png');
 const ProfileBackground = require('../assets/imgs/bg5.png');
+<<<<<<< HEAD
 const RegisterBackground = require('../assets/imgs/skyblue.png');
+=======
+const RegisterBackground = require('../assets/Splash4.jpg');
+>>>>>>> 1f99f5c36bf5af5d4c9f719ba6cc0b52f2e80b1e
 const Pro = require('../assets/imgs/bg.png');
 const NowLogo = require('../assets/imgs/Blogo2.png');
 const iOSLogo = require('../assets/imgs/ios.png');
